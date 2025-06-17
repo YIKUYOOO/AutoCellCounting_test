@@ -41,6 +41,7 @@ Introduction:
 
 模型验证（使用数据集中的随机10%）：
 ![32,0 001,200](https://github.com/user-attachments/assets/206403f1-ca4c-4041-b27c-e62c87f81330)
+![pred_vs_act](https://github.com/user-attachments/assets/7bc8710e-1baa-45b8-9918-ff2020c6daf2)
 
 
         # 计算误差指标
