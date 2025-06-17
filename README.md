@@ -1,7 +1,6 @@
 # AutoCellCounting_test
 
 基于显微图像的PyTorch+CNN自动细胞计数方法
-"""
 
 训练数据集: BBBC005 (包含从显微镜图像中分割的细胞核)
 
@@ -34,4 +33,26 @@ Introduction:
 
     There are 19,200 image files.
 
-"""
+
+收敛过程：
+![output](https://github.com/user-attachments/assets/a8c532ca-a036-4a38-a3da-0cc7d6f4d1c5)
+![32,0 001,20](https://github.com/user-attachments/assets/c2b40ca5-97c0-47dd-bc79-e93d955a02af)
+
+
+模型验证（使用数据集中的随机10%）：
+![32,0 001,200](https://github.com/user-attachments/assets/206403f1-ca4c-4041-b27c-e62c87f81330)
+
+
+        # 计算误差指标
+        mae, rmse, r2, accuracy = evaluate_model(predictions, labels)
+        print(f"MAE: {mae:.2f}")
+        print(f"RMSE: {rmse:.2f}")
+        print(f"R^2 Score: {r2}")
+        print(f"Accuracy (within 10%): {accuracy:.2f}%")
+
+得到：
+
+        MAE: 0.68
+        RMSE: 1.03
+        R^2 Score: 0.9988292135821217
+        Accuracy (within 10%): 92.14%
